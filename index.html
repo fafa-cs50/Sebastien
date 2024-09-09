@@ -1,68 +1,47 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Sébastien FAYE</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
-            padding: 2rem;
-        }
-        .project {
-            background-color: white;
-            margin: 1rem 0;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-<body>
+<div class="project">
+        <h3>Analyse du marché du vin et stratégie de prix</h3>
+        <p>Description : Étude de marché pour le Domaine des Croix, visant à définir une stratégie de prix compétitive pour le marché américain du vin.</p>
+        <p>Sources des données : Données internes du Domaine des Croix, données de marché sur les vins importés aux États-Unis.</p>
+        <p>Outils : Nettoyage des données - Jupyter notebook, Python, Pandas, Excel. Analyse des données - Matplotlib, Seaborn. Tableau de bord - PowerBi. Storytelling - PowerPoint.</p>
 
-<header>
-    <h1>Portfolio de Sébastien FAYE</h1>
-    <p>Data Analyst | Python | SQL | PowerBi</p>
-</header>
+        <h3>Chargement et inspection des données</h3>
+        <p>L'accès aux données est souvent la première étape du processus d'analyse. Nous avons lu les données, identifié leurs formats et effectué les transformations nécessaires.</p>
 
-<main>
-    <section>
-        <h2>Mes projets</h2>
+        <h3>Nettoyage et préparation des données</h3>
+        <p>Une bonne préparation des données permet d'avoir une analyse performante. Nous avons traité les données manquantes, transformé les données et manipulé les informations.</p>
+
+        <h3>Analyse exploratoire des données</h3>
+        <p>Le traçage et la visualisation des données ont permis de mieux comprendre la répartition des vins par pays, la distribution des prix et des notes.</p>
+
+        <h3>Analyse des données</h3>
+        <h3>Résultats / Découvertes</h3>
+        <p>Nous pouvons retenir 3 points intéressants :</p>
+        <ul>
+            <li>La majorité des vins se vendent entre 10 et 50 USD.</li>
+            <li>Les notes des vins varient principalement entre 85 et 95 points. Et notre vin a une note de 94.</li>
+            <li>Les principaux exportateurs de vins vers les États-Unis sont la France, l'Italie et l'Espagne.</li>
+        </ul>
+        <p>Les prix des vins de Bourgogne ont tendance à fluctuer autour de 49 à 99$. L'analyse de votre vin présente ces caractéristiques : il est ferme et solide avec de belles notes de fruits noirs ainsi que des tanins denses. Les fruits mûrs sont un élément majeur de ce vin concentré. Le vin a de la puissance et un noyau tannique ferme, et nécessitera certainement un vieillissement de sept ans.</p>
+        <p>Les critères "aging" et "dense" sont des indicateurs clés de la qualité et de la valeur des vins de Bourgogne. En mettant en avant ces critères, nous pouvons mieux positionner votre vin sur le marché américain.</p>
+        <p>Nous avons mesuré avec des filtres sur aging et dense et d'autres paramètres :</p>
+        <ul>
+            <li>Le 25ème Percentile des Prix : 49$</li>
+            <li>50ème Percentile : 73,50$</li>
+            <li>75ème Percentile des Prix : 101$</li>
+        </ul>
+
+        <h3>Recommandations</h3>
+        <p>Nous vous recommandons de vous positionner sur un prix de départ de 73,50$ et d'utiliser le potentiel de vieillissement et la densité pour promouvoir ce vin dans les communications marketing et les fiches produits.</p>
+
+        <h3>Contraintes</h3>
+        <p>J'ai pris la décision de supprimer les lignes où je n'ai pas le nom du pays et le prix car ils affectent sérieusement la précision du prix. Il y a eu très peu de valeurs aberrantes (outliers). L'ensemble des graphiques et visuels sont visible par tous.</p>
 
         <div class="project">
-            <h3>Projet 1 : Analyse du marché du vin et stratégie de prix</h3>
-            <p>Utilisation de : Python, Pandas, Matplotlib, PowerBi, PPT, Jupyter notebook</p>
-            <p>Description :  Étude de marché pour le Domaine des Croix, visant à définir une stratégie de prix compétitive pour le marché américain du vin.</p>
-            <div class="project">
-    <h3><p>Voici une courte démonstration interactive de mon dashboard Power BI, illustrant l'analyse des ventes et des filtres dynamiques sur les produits et régions.</p>
-</h3>
-   <iframe width="640" height="360" src="https://www.youtube.com/embed/DBY1QG0VCfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</div>
+            <h3>
+                <p>Voici une courte démonstration interactive de mon dashboard Power BI, illustrant l'analyse des ventes et des filtres dynamiques sur les produits et régions.</p>
+            </h3>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/DBY1QG0VCfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+    </div>
 
-        <div class="project">
-            <h3>Projet 2 : Création d'un tableau de bord interactif pour une entreprise de vente de maquettes et modèles réduits.</h3>
-            <p>Utilisation de : Microsoft Office · SQL · Microsoft Power BI · Analyse des données · comprehension des besoins métiers</p>
-            <p>Description : 
-                 <p>- Développer un dashboard couvrant 4 domaines clés : ventes, finances, logistique et ressources humaines.</p>
-                 <p> - Fournir des KPIs et visualisations pertinents pour la prise de décision.</p>
-            <a href="https://github.com/tonusername/projet2" target="_blank">Voir sur GitHub</a>
-        </div>
-
-    </section>
-</main>
-
-</body>
-</html>
+</section>
